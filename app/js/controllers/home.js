@@ -4,9 +4,10 @@
 ==================================================================*/
 /*global app*/
 
-app.controller('HomectrlCtrl', ['$scope', function ($scope) {
+app.controller('HomeCtrl', ['$scope', 'drone', function ($scope, drone) {
 
 	'use strict';
+	$scope.sentence = "HELLO WORLD";
 
 	console.log('Controller ===  HomectrlCtrl');
 }]);

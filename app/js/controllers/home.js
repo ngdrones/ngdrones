@@ -21,6 +21,22 @@ app.controller('HomeCtrl', ['$scope', 'ardrone', function ($scope, ardrone) {
 			// space equals emergency
 			ardrone.stop();
 		}
+		else if (event.keyCode == 87) {
+			// w = up
+			ardrone.up();
+		}
+		else if (event.keyCode == 65) {
+			// space equals emergency
+			ardrone.left();
+		}
+		else if (event.keyCode == 83) {
+			// space equals emergency
+			ardrone.down();
+		}
+		else if (event.keyCode == 68) {
+			// space equals emergency
+			ardrone.right();
+		}
 		// w = 87
 	}
 

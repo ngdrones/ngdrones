@@ -44,7 +44,8 @@ $ npm install -g yo
 $ npm install -g bower
 $ npm install -g gulp
 $ npm install -g bower
-$ npm install -g generator-boom```
+$ npm install -g generator-boom
+```
 
 Next, run:
 ```npm install```

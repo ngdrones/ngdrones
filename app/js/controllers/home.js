@@ -4,16 +4,26 @@
 ==================================================================*/
 /*global app*/
 
-app.controller('HomeCtrl', ['$scope', 'ardrone', function ($scope, drone) {
+app.controller('HomeCtrl', ['$scope', 'ardrone', function ($scope, ardrone) {
 
 	'use strict';
-	$scope.sentence = "HELLO WORLD";
-	$scope.count = 7;
+
 	$scope.keyTest = function(event){
-		console.log(event.keyCode);
+		if (event.keyCode == 69) {
+			// e = takeoff
+			ardrone.takeOff();
+		}
+		else if(event.keyCode == 82) {
+			// r = land
+			ardrone.land();
+		}
+		else if (event.keyCode == 32) {
+			// space equals emergency
+			ardrone.stop();
+		}
+		// w = 87
 	}
 
-	console.log('Controller ===  HomectrlCtrl');
 }]);
 
 

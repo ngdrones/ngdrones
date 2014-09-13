@@ -4,7 +4,7 @@
 ==================================================================*/
 /*global app*/
 
-app.controller('HomeCtrl', ['$scope', 'drone', function ($scope, drone) {
+app.controller('HomeCtrl', ['$scope', 'ardrone', function ($scope, drone) {
 
 	'use strict';
 	$scope.sentence = "HELLO WORLD";

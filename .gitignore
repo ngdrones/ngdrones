@@ -1,2 +1,10 @@
-/node_modules/
+node_modules/
+.sass-cache
+build/
+.DS_Store
 npm-debug.log
+zip/
+scss/
+bower_components/
+.project
+.gitignore

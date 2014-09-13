@@ -25,11 +25,10 @@
         "angularjs"
     ],
     "devDependencies": {
-        "gulp": "^3.8.8",
+        "gulp": "~3.5.0",
         "browser-sync": "~0.5.7",
         "chalk": "^0.4.0",
         "connect-livereload": "*",
-        "gulp": "~3.5.0",
         "gulp-concat": "~2.1.7",
         "gulp-connect": "^2.0.5",
         "gulp-grunt": "~0.4.0",
@@ -68,6 +67,7 @@
     "dependencies": {
         "cylon": "^0.18.0",
         "cylon-ardrone": "^0.13.0",
+        "express": "^4.9.0",
         "primus.io": "^3.1.2"
     }
 }

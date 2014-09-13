@@ -29,7 +29,7 @@ app.service('ardrone', ['$rootScope', '$http', '$resource', function ($rootScope
 			$http.get('/api/robots/ngdrone/devices/drone/commands/land');
 		},
 		up: function () {
-			$http.post('/api/robots/ngdrone/devices/drone/commands/up', {speed: speed} );
+			$http.post('/api/robots/ngdrone/devices/drone/commands/up', {data: {speed: speed}} );
 		},
 		down: function () {
 			$http.post('/api/robots/ngdrone/devices/drone/commands/down', {speed: speed} );

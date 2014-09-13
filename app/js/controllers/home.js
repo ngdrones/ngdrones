@@ -23,20 +23,21 @@ app.controller('HomeCtrl', ['$scope', 'ardrone', function ($scope, ardrone) {
 		}
 		else if (event.keyCode == 87) {
 			// w = up
-			ardrone.up();
+			ardrone.up(.25);
 		}
 		else if (event.keyCode == 65) {
 			// space equals emergency
-			ardrone.left();
+			ardrone.left(.25);
 		}
 		else if (event.keyCode == 83) {
 			// space equals emergency
-			ardrone.down();
+			ardrone.down(.25);
 		}
 		else if (event.keyCode == 68) {
 			// space equals emergency
-			ardrone.right();
+			ardrone.right(.25);
 		}
+
 		// w = 87
 	}
 

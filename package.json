@@ -1,0 +1,42 @@
+{
+  "name": "ngdrones",
+  "version": "0.0.0",
+  "main": "lib/ngdrones.js",
+  "description": "AngularJS interface for controlling an AR.Drone",
+  "homepage": "http://ngdron.es",
+  "bugs": "https://github.com/ngdrones/ngdrones/issues",
+  "author": {
+    "name": "Benjamin Kitt",
+    "email": "ben@thepuddle.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ngdrones/ngdrones"
+  },
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "ngdrones",
+    "ardrone",
+    "drone",
+    "angular",
+    "angularjs"
+  ],
+  "devDependencies": {
+    "gulp": "^3.8.8"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "bin": {
+    "ngdrones": "cli.js"
+  },
+  "preferGlobal": "true",
+  "dependencies": {
+    "cylon": "^0.18.0",
+    "cylon-ardrone": "^0.13.0",
+    "primus.io": "^3.1.2"
+  }
+}

@@ -4,7 +4,7 @@
 ==================================================================*/
 /*global app*/
 
-app.service('ardrone', ['$rootScope','$resource', function ($rootScope, $resource) {
+app.service('ardrone', ['$rootScope', '$resource', function ($rootScope, $resource) {
 
 	'use strict';
 	var _this,
@@ -19,25 +19,25 @@ app.service('ardrone', ['$rootScope','$resource', function ($rootScope, $resourc
 
 
 	ardrone = {
-		stop: function(){
+		stop: function () {
+		
+		},
+		takeOff: function () {
+		
+		},
+		land: function () {
+		
+		},
+		up: function () {
 
 		},
-		takeOff: function(){
+		down: function () {
 
 		},
-		land: function(){
+		left: function () {
 
 		},
-		up: function(){
-
-		},
-		down: function(){
-
-		},
-		left: function(){
-
-		},
-		right: function(){
+		right: function () {
 
 		}
 	};

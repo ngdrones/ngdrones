@@ -39,11 +39,12 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 To get started, you need to have bower, Yeoman, gulp, and generator-boom installed. To install these:
 
-```npm install -g yo
-npm install -g bower
-npm install -g gulp
-npm install -g bower
-npm install -g generator-boom```
+```sh
+$ npm install -g yo
+$ npm install -g bower
+$ npm install -g gulp
+$ npm install -g bower
+$ npm install -g generator-boom```
 
 Next, run:
 ```npm install```

@@ -8,3 +8,4 @@ scss/
 bower_components/
 .project
 .gitignore
+.idea/*

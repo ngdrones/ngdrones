@@ -8,7 +8,7 @@ app.controller('HomeCtrl', ['$scope', 'ardrone', function ($scope, ardrone) {
 
 	'use strict';
 
-	$scope.keyTest = function(event){
+	$scope.triggerDroneEvent = function(event){
 		if (event.keyCode == 69) {
 			// e = takeoff
 			ardrone.takeOff();

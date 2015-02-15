@@ -12,11 +12,6 @@ app.service('ardrone', ['$rootScope', '$http', '$resource', function ($rootScope
 
 
 
-
-
-
-
-
 	ardrone = {
 		stop: function () {
 			$http.get('/api/robots/ngdrone/devices/drone/commands/stop');

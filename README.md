@@ -1,63 +1,20 @@
-#  [![Build Status](https://secure.travis-ci.org/ngdrones/ngdrones.png?branch=master)](http://travis-ci.org/ngdrones/ngdrones)
+# ngdrones
 
-> AngularJS interface for controlling an AR.Drone
+*Generated with [ng-poly](https://github.com/dustinspecker/generator-ng-poly/tree/v0.10.12) version 0.10.12*
 
+## Setup
+1. Install [Node.js](http://nodejs.org/)
+ - This will also install npm.
+1. Run `npm install -g bower gulp yo generator-ng-poly@0.10.12`
+ - This enables Bower, Gulp, and Yeoman generators to be used from command line.
+1. Run `npm install` to install this project's dependencies
+1. Run `bower install` to install client-side dependencies
+1. Use [generator-ng-poly](https://github.com/dustinspecker/generator-ng-poly) to create additional components
 
-## Getting Started
-
-Install the module with: `npm install ngdrones`
-
-```js
-var ngdrones = require('ngdrones');
-ngdrones.awesome(); // "awesome"
-```
-
-Install with cli command
-
-```sh
-$ npm install -g ngdrones
-$ ngdrones --help
-$ ngdrones --version
-```
-
-
-
-
-## Documentation
-
-_(Coming soon)_
-
-
-## Examples
-
-_(Coming soon)_
-
-
-## Contributing
-
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com).
-
-To get started, you need to have bower, Yeoman, gulp, and generator-boom installed. To install these:
-
-```sh
-$ npm install -g yo
-$ npm install -g bower
-$ npm install -g gulp
-$ npm install -g bower
-$ npm install -g generator-boom
-```
-
-Next, run:
-```npm install```
-This will load all of the node modules. If the bower components aren't automatically installed, run: ```bower install```
-
-To run the server and start developing, run: ```gulp```
-
-Example REST command:
-
-//localhost:9000/api/robots/ngdrone/devices/drone/commands/takeoff
-
-## License
-
-Copyright (c) 2014 Benjamin Kitt  
-Licensed under the MIT license.
+## Gulp tasks
+- Run `gulp build` to compile assets
+- Run `gulp dev` to run the build task and setup the development environment
+- Run `gulp unitTest` to run unit tests via Karma and to create code coverage reports
+- Run `gulp webdriverUpdate` to download Selenium server standalone and Chrome driver for e2e testing
+- Run `gulp e2eTest` to run e2e tests via Protractor
+ - **A localhost must be running** - `gulp dev`

@@ -2,22 +2,11 @@
   "name": "ngdrones",
   "version": "0.0.0",
   "dependencies": {
-    "angular": "*",
-    "angular-resource": "*",
-    "angular-cookies": "*",
-    "angular-sanitize": "*",
-    "angular-route": "*",
-    "angular-animate": "*",
-    "angular-ui-utils": "*",
-    "angular-bootstrap": "*",
-    "angular-ui-router": "*",
-    "ng-grid": "*"
+    "angular": "~1.4.*",
+    "angular-ui-router": "~0.2.10",
+    "angular-material": "~0.10.0"
   },
   "devDependencies": {
-    "angular-mocks": "*",
-    "angular-scenario": "*"
-  },
-  "overrides": {
-
+    "angular-mocks": "~1.4.*"
   }
 }

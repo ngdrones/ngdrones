@@ -1,2 +1,12 @@
-h2 home
-p {{home.ctrlName}}
+h2 NG-Drones
+div
+	h4 Your Device: {{ home.bot.name }}
+	select( "ng-model"= "home.bot", "ng-options" = "d.bot as d.label for d in home.availableBots")
+
+div
+	br
+	textarea( "ng-keydown" = "home.bot.trigger($event)", placeholder= "Click in box to gain control of your bot" )
+div
+	ul
+		li( "ng-repeat" = "i in home.bot.botControls" )
+			{{ i.input }}: {{ i.text }}

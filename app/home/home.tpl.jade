@@ -10,3 +10,20 @@ div
 	ul
 		li( "ng-repeat" = "i in home.bot.botControls" )
 			{{ i.input }}: {{ i.text }}
+
+//- div( "leap-swipe-left" = "home.a=home.a+1" ) Swipe Left => +1
+//- div( "leap-swipe-right" = "home.a = home.a+1" ) Swipe Right => +1
+//- div( "leap-swipe-up" = "home.a = home.a+10" ) Swipe Up => +10
+//- div( "leap-swipe-down" = "home.a = home.a-10" ) Swipe Down => -10
+//- div( "leap-swipe-forward" = "home.a = home.a*home.a" ) Swipe Forward => a^2
+//- div( "leap-swipe-backward" = "home.a = home.a / home.a" ) Swipe Backward => a/2
+
+
+//- div( "leap-swipe-circle" = "home.addByCircleSize($gesture)" ) Circle => +%CircleSize%
+//- div( "leap-swipe-circle-clockwise" = "home.addByCircleSize($gesture)" ) Circle Clockwise=> +%CircleSize%
+//- div( "leap-swipe-circle-counter-clockwise" = "home.addByCircleSize($gesture)" ) Circle Counter Clockwise=> +%CircleSize%
+
+//- div( "leap-screentap" = "home.sqrt($gesture)" ) ScreenTap => sqrt
+//- div( "leap-keytap" = "home.pow2($gesture)" ) Swipe Down => power^%Hands%
+
+//- div( "leap-bind" = "{ hands: 'hands' }", style = "position:absolute; left:{{hands[0].palmPosition[0]}}px;") {{ hands[0].palmPosition[0] }}

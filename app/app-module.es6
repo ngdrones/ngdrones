@@ -10,6 +10,7 @@
     .module('ngdrones', [
       'ngMaterial',
       'ui.router',
-      'home'
+      'home',
+      'angularLeap'
     ]);
 }());

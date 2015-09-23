@@ -9,6 +9,14 @@
         vertical: 10,
         rotation: 10
       };
+
+      // flight controls - http://cylonjs.com/documentation/drivers/ardrone-flight/
+      // TODO: (add flight controls) - animate, animateLeds**, frontFlip, backFlip, leftFlip, rightFlip, wave**, getPngStream**, hover, ftrim
+
+      // navigation controls - http://cylonjs.com/documentation/drivers/ardrone-navigation/
+      // TODO: (add nav controls) - lowBattery**, altitudeChange**, batteryChange**, landed, landing**, takeoff, hovering, flying
+
+
       this.botControls = [
         {
           key: 32,

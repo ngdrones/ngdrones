@@ -7,6 +7,10 @@
       this.speed = {
         horizontal: 10
       };
+
+
+      // TODO: update actions to point to correct endpoints for ollie, currently they point to ARDrone endpoints
+
       this.botControls = [
         {
           key: 65,

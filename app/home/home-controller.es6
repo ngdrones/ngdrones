@@ -24,6 +24,16 @@
     }
 
 
+    // TODO research, find library and integrate leap motion controls into ARDrone and Ollie refer to google earth and leap motion for ARDrone controls, and the horizontal controls of google earth for ollie
+    leapSwipeLeft(gesture){
+      console.log('LEAP: swipe left', gesture);
+    }
+
+    leapSwipeRight(gesture){
+      console.log('LEAP: swipe right', gesture);
+    }
+
+
 
   }
 

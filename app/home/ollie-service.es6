@@ -2,29 +2,40 @@
   'use strict';
 
   class Ollie {
-    constructor() {
+    constructor( $http ) {
       this.name = 'Ollie';
+      this.speed = {
+        horizontal: 10
+      };
       this.botControls = [
         {
           key: 65,
           input: "a",
           text: "Left",
-          action: this.left()
+          action: () => {
+            $http.post('/api/robots/ngdrone/devices/drone/commands/left', {speed: this.speed.horizontal} );
+          }
         }, {
           key: 68,
           input: "d",
           text: "Right",
-          action: this.right()
+          action: () => {
+            $http.post('/api/robots/ngdrone/devices/drone/commands/right', {speed: this.speed.horizontal} );
+          }
         }, {
           key: 83,
           input: "s",
           text: "Back",
-          action: this.back()
+          action: () => {
+            $http.post('/api/robots/ngdrone/devices/drone/commands/back', {speed: this.speed.horizontal} );
+          }
         }, {
           key: 87,
           input: "w",
           text: "Forward",
-          action: this.forward()
+          action: () => {
+            $http.post('/api/robots/ngdrone/devices/drone/commands/front', {speed: this.speed.horizontal} );
+          }
         }
       ];
     }
@@ -33,32 +44,10 @@
     trigger(event){
       for(let ctrl of this.botControls){
         if(ctrl.key == event.keyCode){
-          console.log('action triggered from service', ctrl.input);
-          // ctrl.action()
+          console.log('ollie: ', ctrl.text);
+          ctrl.action();
         }
       }
-    }
-
-
-
-    forward(){
-      console.log('service: forward');
-      // $http.post('/api/robots/ngdrone/devices/drone/commands/front', {speed: speed} );
-    }
-
-    back(){
-      console.log('service: back');
-      // $http.post('/api/robots/ngdrone/devices/drone/commands/back', {speed: speed} );
-    }
-
-    left(){
-      console.log('service: left');
-      // $http.post('/api/robots/ngdrone/devices/drone/commands/left', {speed: speed} );
-    }
-
-    right(){
-      console.log('service: right');
-      // $http.post('/api/robots/ngdrone/devices/drone/commands/right', {speed: speed} );
     }
 
   }

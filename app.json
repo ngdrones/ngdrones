@@ -1,0 +1,11 @@
+{
+  "name": "ngDrones",
+  "description": "Control all the drones",
+  "website": "http://github.com/ngDrones",
+  "success_url": "/",
+  "env": {
+  },
+  "scripts": {
+    "postdeploy": "gulp"
+  }
+}

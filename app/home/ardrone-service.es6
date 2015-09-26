@@ -5,9 +5,9 @@
     constructor( $http ) {
       this.name = "AR Drone";
       this.speed = {
-        horizontal: 10,
-        vertical: 10,
-        rotation: 10
+        horizontal: 1,
+        vertical: 1,
+        rotation: 1
       };
 
       // flight controls - http://cylonjs.com/documentation/drivers/ardrone-flight/
@@ -95,7 +95,39 @@
           action: () => {
             $http.post('/api/robots/ngdrone/devices/drone/commands/counter_clockwise', {speed: this.speed.rotation} );
           }
-        }
+        },
+        {
+          key: 90,
+          input: "z",
+          text: "Flip left",
+          action: () => {
+            $http.post('/api/robots/ngdrone/devices/drone/commands/left_flip', {duration: 2} );
+          }
+        },
+        {
+          key: 88,
+          input: "x",
+          text: "Front flip",
+          action: () => {
+            $http.post('/api/robots/ngdrone/devices/drone/commands/front_flip', {duration: 1} );
+          }
+        },
+        {
+          key: 67,
+          input: "c",
+          text: "Flip right",
+          action: () => {
+            $http.post('/api/robots/ngdrone/devices/drone/commands/right_flip', {duration: 1} );
+          }
+        },
+        {
+          key: 56,
+          input: "8",
+          text: "Wave",
+          action: () => {
+            $http.post('/api/robots/ngdrone/devices/drone/commands/right_flip', {duration: 3} );
+          }
+        },
       ];
     }
 

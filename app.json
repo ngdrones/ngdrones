@@ -6,6 +6,6 @@
   "env": {
   },
   "scripts": {
-    "postdeploy": "gulp"
+    "postdeploy": "node index.js"
   }
 }

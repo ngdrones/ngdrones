@@ -32,6 +32,15 @@
   "dependencies": {
     "cylon": "^0.18.0",
     "cylon-ardrone": "^0.13.0",
+    "cylon-ollie": {
+      "version": "0.6.0",
+      "dependencies": {
+        "node-serialport": {
+          "version": "*",
+          "resolved": "git://github.com/julianduque/node-serialport.git#master"
+        }
+      }
+    },
     "express": "^4.9.0",
     "primus.io": "^3.1.2"
   },
@@ -74,7 +83,7 @@
     "gulp-protractor": "^1.0.0",
     "gulp-rename": "^1.2.0",
     "gulp-rev": "^5.1.0",
-    "gulp-sass": "^1.0.0",
+    "gulp-sass": "^2.0.4",
     "gulp-sourcemaps": "^1.5.1",
     "gulp-tslint": "^3.1.2",
     "gulp-uglify": "^1.0.0",

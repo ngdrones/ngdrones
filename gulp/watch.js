@@ -1,6 +1,7 @@
 'use strict';
 
 var proxyMiddleware = require('http-proxy-middleware');
+var nodemon = require('nodemon');
 
 module.exports = function (gulp, $, config) {
   var options = {
@@ -8,7 +9,7 @@ module.exports = function (gulp, $, config) {
   };
   var proxy = proxyMiddleware('/api', options);
 
-  gulp.task('browserSync', function () {
+  gulp.task('browserSync', ['nodemon'], function () {
     $.browserSync({
       host: config.host,
       open: 'external',
@@ -25,4 +26,20 @@ module.exports = function (gulp, $, config) {
     gulp.watch([config.unitTestFiles], ['unitTest']);
     gulp.watch([config.appFiles, '!' + config.unitTestFiles], ['build', $.browserSync.reload]);
   });
+
+  gulp.task('nodemon', function (cb) {
+
+    var started = false;
+
+    return nodemon({
+      script: 'index.js'
+    }).on('start', function () {
+      // to avoid nodemon being started multiple times
+      // thanks @matthisk
+      if (!started) {
+        cb();
+        started = true;
+      }
+  });
+});
 };

@@ -93,6 +93,7 @@
     "mocha": "^2.2.0",
     "multi-glob": "^0.4.0",
     "node-sass": "^3.3.3",
+    "nodemon": "^1.7.1",
     "plato": "^1.4.0",
     "protractor": "^2.0.0",
     "require-dir": "^0.3.0",
